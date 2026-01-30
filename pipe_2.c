@@ -17,8 +17,8 @@ int main()
 	write(plastic[1],parent,15);
 	read(plastic[0],child,15);
 
-	//concat(child,"world");
-	strcat(child,"world");
+	concat(child,"world");
+	//strcat(child,"world");
 
 	printf("child data :%s\t",child);
 
