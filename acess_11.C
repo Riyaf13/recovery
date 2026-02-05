@@ -1,3 +1,5 @@
+// private --- private
+
 #include<iostream>
 using namespace std;
 class base
@@ -26,6 +28,10 @@ class derived:private base
 };
 class derived2:private derived
 {
+	/*
+	 * private:
+	 * show();
+	 **/
 	public:
 	void show_1()
 	{

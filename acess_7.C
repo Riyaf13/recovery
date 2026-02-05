@@ -1,3 +1,5 @@
+// public --- protected
+
 #include<iostream>
 using namespace std;
 class base
@@ -6,15 +8,15 @@ class base
 	int a;
 	int b;
 };
-class derived:private base
+class derived:public base
 {
 	/*
-	 * private:
+	 * protected:
 	 * int a;
 	 * int b;
 	 */
 
-	public:
+	/*public:
 	
 	void show()
 	{
@@ -22,18 +24,26 @@ class derived:private base
 		cout<<"a="<<a<<endl;
 		b=20;
 		cout<<"b="<<b<<endl;
-	}	
+	}*/	
 };
-class derived2:private derived
+class derived2:protected derived
 {
+	/*
+	 * protected:
+	 * int a;
+	 * int b;
+	 **/
 	public:
 	void show_1()
 	{
-		show();
+		a=10;
+		b=15;
+		//show();
 	}
 };
 int main()
 {
 	derived2 d2;
 	d2.show_1();
+	//d2.show();
 }

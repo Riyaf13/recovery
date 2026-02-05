@@ -1,47 +1,48 @@
-//and default constructor has been used . 
+// protected ----public
 
 #include<iostream>
 using namespace std;
 class base
 {
-	private:
+	protected:
 	int a;
 	int b;
-	public:
-	void set()
-	{
-		a=10;
-		b=15;
-	}
-	void get()
-	{
-		cout<<a<<endl;
-		cout<<b<<endl;
-	}
 };
-class derived:public base
+class derived:protected base
 {
-	public:
+	/*
+	 * protected:
+	 * int a;
+	 * int b;
+	 */
+
+	/*public:
+	
 	void show()
 	{
-		set();
-		get();
-	}
+		a=10;
+		cout<<"a="<<a<<endl;
+		b=20;
+		cout<<"b="<<b<<endl;
+	}*/	
 };
 class derived2:public derived
 {
+	/*
+	 * public:
+	 * show();
+	 **/
 	public:
 	void show_1()
 	{
+		a=10;
+		b=15;
 		//show();
-		cout<<"finish\n"<<endl;
 	}
 };
 int main()
 {
 	derived2 d2;
-	d2.set();
-	d2.get();
-	d2.show();
 	d2.show_1();
+	//d2.show();
 }

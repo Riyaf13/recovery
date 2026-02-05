@@ -8,6 +8,11 @@ class base
 };
 class derived:public base
 {
+	/*
+	   private:
+	   int a;
+	   int b;
+	   */
 	public:
 	void show()
 	{
@@ -28,5 +33,6 @@ class derived2:public derived
 int main()
 {
 	derived2 d2;
-	d2.show_1();
+	//d2.show_1();
+	d2.show();
 }
