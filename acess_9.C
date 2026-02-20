@@ -16,7 +16,7 @@ class derived:protected base
 	 * int b;
 	 */
 
-	/*public:
+	public:
 	
 	void show()
 	{
@@ -24,7 +24,7 @@ class derived:protected base
 		cout<<"a="<<a<<endl;
 		b=20;
 		cout<<"b="<<b<<endl;
-	}	*/
+	}	
 };
 class derived2:private derived
 {
@@ -37,7 +37,7 @@ class derived2:private derived
 	{
 		a=10;
 		b=15;
-		//show();
+		show();
 	}
 };
 int main()
