@@ -1,0 +1,9 @@
+echo "This is Copy program"
+echo "Enter Source file name"
+read src
+echo "Enter Destination file name"
+read dest
+
+cp  $src $dest
+echo "File has beed copied"
+

@@ -1,0 +1,10 @@
+# compiled files
+*.o
+*.out
+*.exe
+
+# logs
+*.log
+
+# binaries
+a.out
